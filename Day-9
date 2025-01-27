@@ -1,0 +1,18 @@
+# Importing necessary libraries
+import pandas as pd
+
+# Loading the banking_data.csv file
+file_path = '/path/to/Day_9_banking_data.csv'  # Replace with the actual path
+banking_data = pd.read_csv(file_path)
+
+# Displaying the first 5 rows of the dataset
+print("First 5 rows of the dataset:")
+print(banking_data.head())
+
+# Generating basic statistics of the numerical columns
+print("\nBasic statistics of numerical columns:")
+print(banking_data.describe())
+
+# Checking for missing values in the dataset
+print("\nMissing values in the dataset:")
+print(banking_data.isnull().sum())

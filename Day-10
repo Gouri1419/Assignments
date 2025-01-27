@@ -1,0 +1,24 @@
+# Importing necessary libraries
+import pandas as pd
+
+# Loading the dataset
+file_path = '"C:/Users/Win 10/Downloads/Day_9_banking_data.csv'  # Replace with the actual path
+banking_data = pd.read_csv(file_path)
+
+# 1. Filter out all rows where Transaction_Amount is greater than 2000
+transactions_above_2000 = banking_data[banking_data['Transaction_Amount'] > 2000]
+print("Transactions with Transaction_Amount greater than 2000:")
+print(transactions_above_2000)
+
+# 2. Find all rows where Transaction_Type is "Loan Payment" and Account_Balance > 5000
+loan_payment_high_balance = banking_data[
+    (banking_data['Transaction_Type'] == 'Loan Payment') & 
+    (banking_data['Account_Balance'] > 5000)
+]
+print("\nRows with Transaction_Type as 'Loan Payment' and Account_Balance greater than 5000:")
+print(loan_payment_high_balance)
+
+# 3. Extract transactions made in the "Uptown" branch
+uptown_transactions = banking_data[banking_data['Branch'] == 'Uptown']
+print("\nTransactions made in the 'Uptown' branch:")
+print(uptown_transactions)
