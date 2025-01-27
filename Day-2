@@ -1,0 +1,23 @@
+# Creating a List with 5 elements
+my_list = [10, 20, 30, 40, 50]
+
+# Creating a Tuple with 5 elements
+my_tuple = ('apple', 'banana', 'cherry', 'date', 'elderberry')
+
+# Creating a Dictionary with 5 key-value pairs
+my_dict = {'name': 'Alice', 'age': 25, 'city': 'New York', 'job': 'Engineer', 'is_student': False}
+
+# Accessing elements based on index (or key for dictionary)
+# For List
+print("List Element at index 2:", my_list[2])  # Accessing the 3rd element (index 2)
+
+# For Tuple
+print("Tuple Element at index 1:", my_tuple[1])  # Accessing the 2nd element (index 1)
+
+# For Dictionary, access by key
+print("Dictionary Element for key 'name':", my_dict['name'])  # Accessing value associated with 'name'
+print("Dictionary Element for key 'age':", my_dict['age'])    # Accessing value associated with 'age'
+
+# Negative indexing (starting from the end)
+print("List Element at index -1 (last element):", my_list[-1])  # Last element
+print("Tuple Element at index -2 (second to last):", my_tuple[-2])  # Second to last element
